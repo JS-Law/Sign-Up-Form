@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Cinzel';
+    src: url(../assets/fonts/Cinzel/Cinzel-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Grotesque';
+    src: url(../assets/fonts/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf);
+}
+
+$default-font: 'Cinzel';
+$secondary-font: 'Grotesque';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
