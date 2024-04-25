@@ -32,11 +32,12 @@ body {
 }
 
 .hero {
-  margin-block-start: 10rem;
+  margin-block-start: 8rem;
   padding-block: 2rem;
-  background-color: rgba(7, 57, 60, 0.7568627451);
+  background-color: rgba(7, 57, 60, 0.8235294118);
   text-align: center;
   color: #9BF3F0;
+  padding-inline: 1rem;
 }
 .hero #title {
   font-family: "DancingScript";

@@ -34,7 +34,7 @@ $cursive-font: 'DancingScript';
 $ice-blue: #9BF3F0;
 $ice-blue-st: #9bf3f0be;
 $midnight-green: #07393C;
-$midnight-green-st: #07393cc1;
+$midnight-green-st: #07393cd2;
 $pale-dogwood: #E5D0CC;
 $pale-dogwood-st: #e5d0ccc4;
 $rose-quartz: #BFACB5;
@@ -55,11 +55,12 @@ body{
 }
 
 .hero{
-    margin-block-start: 10rem;
+    margin-block-start: 8rem;
     padding-block: 2rem;
     background-color: $midnight-green-st;
     text-align: center;
     color: $ice-blue;
+    padding-inline: 1rem;
     #title{
         font-family: $cursive-font;
         font-size: 5rem;
@@ -71,6 +72,24 @@ body{
     #calltoaction{
         font-family: $secondary-font;
         font-size: 1.1rem;
+
+    }
+}
+
+#signUpContainer{
+    
+    fieldset{
+
+        legend{
+
+        }
+        .inputContainer{
+
+            .input{
+
+                
+            }
+        }
 
     }
 }
