@@ -58,19 +58,22 @@ body {
   align-items: center;
   background-color: rgba(191, 172, 181, 0.8078431373);
   width: 90vw;
-  height: 40vh;
+  padding: 2rem;
   margin-inline: auto;
 }
 #signUpContainer fieldset {
   border: none;
 }
 #signUpContainer fieldset legend {
+  font-family: "DancingScript";
   text-align: center;
+  font-size: 2rem;
 }
 #signUpContainer fieldset .inputContainer {
   display: flex;
   gap: 1rem;
   margin-block: 1.25rem;
+  font-family: "Grotesque";
 }
 
 /*# sourceMappingURL=styles.css.map */

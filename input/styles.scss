@@ -82,17 +82,20 @@ body{
     align-items: center;
     background-color: $rose-quartz-st;
     width: 90vw;
-    height: 40vh;
+    padding: 2rem;
     margin-inline: auto;
     fieldset{
         border: none;
         legend{
+            font-family: $cursive-font;
             text-align: center;
+            font-size: 2rem;
         }
         .inputContainer{
             display: flex;
             gap: 1rem;
             margin-block: 1.25rem;
+            font-family: $secondary-font;
             .input{
 
                 
