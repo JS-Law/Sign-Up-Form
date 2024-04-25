@@ -8,10 +8,69 @@
     src: url(../assets/fonts/Darker_Grotesque/DarkerGrotesque-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: 'Josefin';
+    src: url(../assets/fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Josefin-Italic';
+    src: url(../assets/fonts/Josefin_Slab/JosefinSlab-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+
 $default-font: 'Cinzel';
 $secondary-font: 'Grotesque';
+
+$accent-font: 'Josefin';
+$accent-font-italic: 'Josefin-Italic';
+
+$cursive-font: 'DancingScript';
+
+$ice-blue: #9BF3F0;
+$ice-blue-st: #9bf3f0be;
+$midnight-green: #07393C;
+$midnight-green-st: #07393cc1;
+$pale-dogwood: #E5D0CC;
+$pale-dogwood-st: #e5d0ccc4;
+$rose-quartz: #BFACB5;
+$rose-quartz-st: #bfacb5ce;
 
 *{
     box-sizing: border-box;
     margin: 0;
+}
+
+body{
+    // background-image: url(../assets/images/background.jpg); // I like this one! I should use it for something else, I dont know yet
+    background-image: url(../assets/images/background6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.hero{
+    margin-block-start: 10rem;
+    padding-block: 2rem;
+    background-color: $midnight-green-st;
+    text-align: center;
+    color: $ice-blue;
+    #title{
+        font-family: $cursive-font;
+        font-size: 5rem;
+        padding-block-end: 2.5rem;
+    }
+    #slogan{
+        font-family: $secondary-font;
+    }
+    #calltoaction{
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+
+    }
 }
