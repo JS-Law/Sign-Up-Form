@@ -52,4 +52,25 @@ body {
   font-size: 1.1rem;
 }
 
+#signUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(191, 172, 181, 0.8078431373);
+  width: 90vw;
+  height: 40vh;
+  margin-inline: auto;
+}
+#signUpContainer fieldset {
+  border: none;
+}
+#signUpContainer fieldset legend {
+  text-align: center;
+}
+#signUpContainer fieldset .inputContainer {
+  display: flex;
+  gap: 1rem;
+  margin-block: 1.25rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
