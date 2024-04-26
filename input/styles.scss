@@ -51,7 +51,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 130vh;
 }
 
 .hero{
@@ -84,10 +84,12 @@ body{
     width: 90vw;
     padding: 2rem;
     margin-inline: auto;
+    border-bottom-left-radius: .7rem;
+    border-bottom-right-radius: .7rem;
     fieldset{
         border: none;
         legend{
-            font-family: $cursive-font;
+            font-family: $secondary-font;
             text-align: center;
             font-size: 2rem;
         }
@@ -102,5 +104,39 @@ body{
             }
         }
 
+        button{
+            margin-top: 2rem;
+            margin-left: 22.5%;
+            font-family: $secondary-font;
+            font-size: 1.2rem;
+            border: $rose-quartz-st 1px solid;
+            background-color: $midnight-green-st;
+            padding-inline: 2rem;
+            padding-block-end: .35rem;
+            padding-block-start: .15rem;
+            color: $ice-blue-st;
+    
+        }
+        button:hover{
+    
+            border: $midnight-green-st 1px solid;
+            background-color: $ice-blue-st;
+            color: $midnight-green-st;
+        }
+    }
+
+    #existingUser{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        p#existingUserText{
+            font-family: $secondary-font;
+            a{
+                text-decoration: none;
+                color: $midnight-green-st;
+                font-weight: 700;
+            }
+        }
     }
 }
