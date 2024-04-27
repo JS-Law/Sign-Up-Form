@@ -73,6 +73,8 @@ body{
     #calltoaction{
         font-family: $secondary-font;
         font-size: 1.1rem;
+        width: clamp(375px, 80vw, 400px);
+        margin-inline: auto;
 
     }
 }
@@ -123,23 +125,28 @@ body{
     
         }
         button:hover{
-    
             border: $midnight-green-st 1px solid;
             background-color: $ice-blue-st;
             color: $midnight-green-st;
         }
-        #submit-success{
-            display: none;
-            font-family: $secondary-font;
-            text-align: center;
-        }
-        #submit-success[data-submit="success"] {
-            display: inline-flex;
-            padding-left: 30px;
-            font-size: 1.2em;
-        }
     }
-
+    #submit-success{
+        visibility: hidden;
+        transition: opacity 0.6s ease-out, visibility 0s linear 0.6s;
+        font-family: $secondary-font;
+        visibility: visible;
+        transition: opacity 0.6s ease-out, visibility 0.6s ease-out;    
+    }
+    #submit-success[data-submit="success"] {
+        padding-left: 65px;
+        padding-block-end: .75rem;
+        display: inline-flex;
+        font-size: 1.2em;
+        font-weight: 500;
+        transition: display .6s ease-out;
+        
+    }
+    
     #existingUser{
         display: flex;
         flex-direction: column;
@@ -153,5 +160,11 @@ body{
                 font-weight: 700;
             }
         }
+    }
+}
+
+@media (min-width: 1001px) {
+    .hero{
+        margin-block-start: 4rem;
     }
 }

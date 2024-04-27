@@ -51,6 +51,8 @@ body {
 .hero #calltoaction {
   font-family: "Grotesque";
   font-size: 1.1rem;
+  width: clamp(375px, 80vw, 400px);
+  margin-inline: auto;
 }
 
 #signUpContainer {
@@ -99,15 +101,20 @@ body {
   background-color: rgba(155, 243, 240, 0.7450980392);
   color: rgba(7, 57, 60, 0.8235294118);
 }
-#signUpContainer fieldset #submit-success {
-  display: none;
+#signUpContainer #submit-success {
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, visibility 0s linear 0.6s;
   font-family: "Grotesque";
-  text-align: center;
+  visibility: visible;
+  transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
 }
-#signUpContainer fieldset #submit-success[data-submit=success] {
+#signUpContainer #submit-success[data-submit=success] {
+  padding-left: 65px;
+  padding-block-end: 0.75rem;
   display: inline-flex;
-  padding-left: 30px;
   font-size: 1.2em;
+  font-weight: 500;
+  transition: display 0.6s ease-out;
 }
 #signUpContainer #existingUser {
   display: flex;
@@ -121,6 +128,12 @@ body {
   text-decoration: none;
   color: rgba(7, 57, 60, 0.8235294118);
   font-weight: 700;
+}
+
+@media (min-width: 1001px) {
+  .hero {
+    margin-block-start: 4rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
