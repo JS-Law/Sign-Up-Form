@@ -46,6 +46,7 @@ body {
 }
 .hero #slogan {
   font-family: "Grotesque";
+  padding-block-end: 1.25rem;
 }
 .hero #calltoaction {
   font-family: "Grotesque";
@@ -57,7 +58,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: rgba(191, 172, 181, 0.8078431373);
-  width: 90vw;
+  width: clamp(375px, 90vw, 600px);
   padding: 2rem;
   margin-inline: auto;
   border-bottom-left-radius: 0.7rem;
@@ -77,6 +78,9 @@ body {
   margin-block: 1.25rem;
   font-family: "Grotesque";
 }
+#signUpContainer fieldset .inputContainer .input:invalid {
+  border: solid 1px red;
+}
 #signUpContainer fieldset button {
   margin-top: 2rem;
   margin-left: 22.5%;
@@ -88,11 +92,22 @@ body {
   padding-block-end: 0.35rem;
   padding-block-start: 0.15rem;
   color: rgba(155, 243, 240, 0.7450980392);
+  border-radius: 0.4rem;
 }
 #signUpContainer fieldset button:hover {
   border: rgba(7, 57, 60, 0.8235294118) 1px solid;
   background-color: rgba(155, 243, 240, 0.7450980392);
   color: rgba(7, 57, 60, 0.8235294118);
+}
+#signUpContainer fieldset #submit-success {
+  display: none;
+  font-family: "Grotesque";
+  text-align: center;
+}
+#signUpContainer fieldset #submit-success[data-submit=success] {
+  display: inline-flex;
+  padding-left: 30px;
+  font-size: 1.2em;
 }
 #signUpContainer #existingUser {
   display: flex;

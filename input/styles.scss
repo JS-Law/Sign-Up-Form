@@ -68,6 +68,7 @@ body{
     }
     #slogan{
         font-family: $secondary-font;
+        padding-block-end: 1.25rem;
     }
     #calltoaction{
         font-family: $secondary-font;
@@ -81,7 +82,8 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: $rose-quartz-st;
-    width: 90vw;
+    // width: 90vw;
+    width: clamp(375px, 90vw, 600px);
     padding: 2rem;
     margin-inline: auto;
     border-bottom-left-radius: .7rem;
@@ -99,8 +101,10 @@ body{
             margin-block: 1.25rem;
             font-family: $secondary-font;
             .input{
-
                 
+            }
+            .input:invalid{
+                border: solid 1px red;
             }
         }
 
@@ -115,6 +119,7 @@ body{
             padding-block-end: .35rem;
             padding-block-start: .15rem;
             color: $ice-blue-st;
+            border-radius: .4rem;
     
         }
         button:hover{
@@ -122,6 +127,16 @@ body{
             border: $midnight-green-st 1px solid;
             background-color: $ice-blue-st;
             color: $midnight-green-st;
+        }
+        #submit-success{
+            display: none;
+            font-family: $secondary-font;
+            text-align: center;
+        }
+        #submit-success[data-submit="success"] {
+            display: inline-flex;
+            padding-left: 30px;
+            font-size: 1.2em;
         }
     }
 
