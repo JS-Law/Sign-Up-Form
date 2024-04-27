@@ -102,6 +102,7 @@ body {
   color: rgba(7, 57, 60, 0.8235294118);
 }
 #signUpContainer #submit-success {
+  opacity: 0;
   visibility: hidden;
   transition: opacity 0.6s ease-out, visibility 0s linear 0.6s;
   font-family: "Grotesque";
@@ -109,6 +110,7 @@ body {
   transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
 }
 #signUpContainer #submit-success[data-submit=success] {
+  opacity: 1;
   padding-left: 65px;
   padding-block-end: 0.75rem;
   display: inline-flex;
